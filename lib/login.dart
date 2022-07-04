@@ -21,10 +21,48 @@ class _LoginState extends State<Login> {
           title: Text("Login"),
         ),
 
-        body: Center(
-            child:Text("Welcome to Login ",
-                style: TextStyle( color: Colors.redAccent, fontSize: 30)
-            )
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+               TextFormField(decoration: InputDecoration(hintText: 'Email', hintStyle: TextStyle (color:Colors.deepPurple,fontSize: 20)) ),
+             SizedBox(height: 40,),
+
+            TextFormField(decoration: InputDecoration(hintText: 'Password',hintStyle: TextStyle (color:Colors.deepPurple,fontSize: 20))),
+
+                SizedBox(height: 40,),
+        GestureDetector(
+          onTap:() {
+            //isLoding =true;
+            print("Sucessfully");
+
+          },
+
+          child: Container(
+
+            height: 50,
+            decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.circular(10)
+            ),
+
+            child: Center(
+                child:Text("Login" ,style: TextStyle(
+                  color: Colors.white,fontSize: 20,),
+                )
+
+            ),
+          ),
+
+
+
+        )
+
+              ],
+          ),
         ),
       ),
     );
