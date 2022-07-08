@@ -18,7 +18,7 @@ class _LoginState extends State<Login> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Login"),
+          title: Text("Login", style: TextStyle(color: Colors.green),),
         ),
 
         body: Padding(

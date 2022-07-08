@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Map extends StatefulWidget {
-  const Map({Key? key}) : super(key: key);
+class Location extends StatefulWidget {
+  const Location({Key? key}) : super(key: key);
 
   @override
-  _MapState createState() => _MapState();
+  State<Location> createState() => _LocationState();
 }
 
-class _MapState extends State<Map> {
+class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Location'),
+      ),
+    );
   }
 }
